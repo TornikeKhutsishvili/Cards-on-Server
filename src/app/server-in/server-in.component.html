@@ -1,0 +1,17 @@
+<div class="form-group col-md-9 mt-2 m-auto maindiv">
+  <input class="form-control mt-2"
+  [(ngModel)]="newServer.serverName" type="text" placeholder="enter server">
+  <select class="form-select mt-2 stat_Sel"
+  [(ngModel)]="newServer.status">
+    <option value="">Status</option>
+    <option value="active">Active</option>
+    <option value="passive">Passive</option>
+  </select>
+  <input class="form-control mt-2"
+  [(ngModel)]="newServer.port" type="text" placeholder="enter port">
+  <input class="form-control mt-2"
+  [(ngModel)]="newServer.tax" type="text" placeholder="enter month tax">
+
+  <button class="d-block col-md-9 mt-2 m-auto btn-primary btn "
+  (click)="addServer()">Add Server</button>
+</div>

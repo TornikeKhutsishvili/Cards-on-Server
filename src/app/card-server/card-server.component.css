@@ -1,0 +1,65 @@
+.cardmain{
+  display: inline-block;
+}
+.cardmain1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+  color: white;
+}
+.a{
+  background-color: green;
+}
+.p{
+  background-color: red;
+}
+.del:hover{
+  cursor: pointer;
+  background-color: black;
+  border: none;
+}
+.inf:hover{
+  cursor: pointer;
+  background-color: blueviolet;
+  border: none;
+}
+.del{
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(37, 24, 24);
+  border: none;
+  padding: 5px 0px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.inf{
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(192, 130, 251);
+  border: none;
+  padding: 5px 0px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.serv{
+  border-radius: 20px;
+  cursor: pointer;
+}
+.v_v{
+  display: block;
+}
+.v_h{
+  display: none;
+}
+.port{
+  margin-top: 15px;
+}

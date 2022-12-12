@@ -1,0 +1,32 @@
+<div class="cardmain">
+  <div class="cardmain1">
+    <div class="card"
+    [ngClass]="info.status == 'active' ? 'a' : 'p'">
+      <p>server name: {{ info.serverName }}</p>
+
+      <select class="serv"
+      [(ngModel)]="info.status"
+      [ngClass]="info.status == '' ? 'v_h' : 'v_v' "
+      *ngIf="info.status=='active'">
+        <option>passive</option>
+        <option>{{ info.status }}</option>
+      </select>
+
+      <select class="serv"
+      [ngClass]="info.status == '' ? 'v_h' : 'v_v' "
+      [(ngModel)]="info.status"
+      *ngIf="info.status=='passive'">
+        <option>active</option>
+        <option>{{ info.status }}</option>
+      </select>
+
+      <button
+        (click)="delclick(info.id)"
+        class="del">Delete</button>
+      <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="inf"
+        [ngClass]="info.status == 'active' ? 'v_v' : 'v_h'"
+        (click)="moreInfo()">more info
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<app-modal></app-modal>
+
+<app-server-in 
+(serverResultEmitter)="serverResultSubscriber($event)">
+</app-server-in>
+
+<div class="main">
+<app-card-server 
+*ngFor="let i of serverArr" [info]="i"></app-card-server>
+</div>
